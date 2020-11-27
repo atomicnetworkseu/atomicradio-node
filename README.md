@@ -66,42 +66,17 @@ test();
 
 
 /**
- * Channel song informations
- * @param {String} channel The channel name. (one, dance or trap)
- */
-.getChannel(channel).getSong().getArtist();
-
-.getChannel(channel).getSong().getTitle();
-
-.getChannel(channel).getSong().getPlaylist();
-
-.getChannel(channel).getSong().getStartTimestamp();
-
-.getChannel(channel).getSong().getEndTimestamp();
-
-.getChannel(channel).getSong().getDuration();
-
-.getChannel(channel).getSong().get100Artwork();
-
-.getChannel(channel).getSong().get250Artwork();
-
-.getChannel(channel).getSong().get500Artwork();
-
-.getChannel(channel).getSong().get1000Artwork();
-
-
-/**
  * Channel upcoming song informations
  * @param {String} channel The channel name. (one, dance or trap)
  */
-.getChannel(channel).getSong().getSchedule();
+.getChannel(channel).getSchedule();
 
 
 /**
  * Channel last song informations
  * @param {String} channel The channel name. (one, dance or trap)
  */
-.getChannel(channel).getSong().getHistory();
+.getChannel(channel).getHistory();
 
 
 /**
