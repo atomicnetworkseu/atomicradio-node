@@ -7,7 +7,7 @@
   Node AtomicRadio 📚
 </h1>
 <p align="center">
-  A node.js library for <a href="https://api.atomicradio.eu">AtomicRadio Web-Api</a>.
+   The node.js library for the <a href="https://api.atomicradio.eu">atomicradio web-api</a>.
 </p>
 <p align="center">
   <a href="https://gitmoji.carloscuesta.me">
