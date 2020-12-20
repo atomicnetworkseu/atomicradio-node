@@ -1,20 +1,20 @@
 {
   "name": "atomicradio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A node.js library for AtomicRadio Web-Api.",
   "main": "./lib/atomicradio.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atomicnetworkseu/node-atomicradio.git"
+    "url": "git+https://github.com/atomicnetworkseu/atomicradio-node.git"
   },
   "scripts": {
-    "test": "echo \"No test specified\""
+    "test": "node ./test/test.js"
   },
   "author": "Kacper Mura <kacper.m@atomicnetworks.eu>",
   "bugs": {
-    "url": "https://github.com/atomicnetworkseu/node-atomicradio/issues"
+    "url": "https://github.com/atomicnetworkseu/atomicradio-node/issues"
   },
-  "homepage": "https://github.com/atomicnetworkseu/node-atomicradio#readme",
+  "homepage": "https://github.com/atomicnetworkseu/atomicradio-node#readme",
   "dependencies": {
     "axios": "^0.21.0"
   },
