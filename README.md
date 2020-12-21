@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://atomicnetworks.eu">
-    <img alt="AtomicNetworks" src="https://cdn.atomicnetworks.eu/atnw/logo/logo.png" width="150" />
+  <a href="https://atomicradio.eu">
+    <img alt="atomicradio" src="https://cdn.atomicnetworks.eu/logo/coloured.png" width="150" />
   </a>
 </p>
 <h1 align="center">
