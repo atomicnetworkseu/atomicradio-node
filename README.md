@@ -19,30 +19,31 @@
 ```npm install atomicradio```
 
 ## Example 📄
-```javascript
-const atomicradio = require('atomicradio');
+```typescript
+import AtomicAPI from "atomicradio";
+
+const api = new AtomicAPI();
 
 async function test() {
-    let value = await atomicradio.getChannel('one').getHistory();
+    let value = await api.getChannel("one").getHistory();
     console.log(value);
 }
 test();
 ```
 
 ## Functions 📗
-```javascript
+```typescript
 /**
- * Channel live informations
- * @param {String} channel The channel name. (one, dance or trap)
+ * Get the data of our livestream.
  */
-.getChannel(channel).getLive().isLive();
+.getLive().isLive();
 
-.getChannel(channel).getLive().getStreamer();
+.getLive().getStreamer();
 
 
 /**
- * Channel song informations
- * @param {String} channel The channel name. (one, dance or trap)
+ * Get the data of a atomicradio channel.
+ * @param channel channel name
  */
 .getChannel(channel).getSong().getArtist();
 
@@ -66,22 +67,22 @@ test();
 
 
 /**
- * Channel upcoming song informations
- * @param {String} channel The channel name. (one, dance or trap)
+ * Get the data of the next playing songs
+ * @param channel channel name
  */
 .getChannel(channel).getSchedule();
 
 
 /**
- * Channel last song informations
- * @param {String} channel The channel name. (one, dance or trap)
+ * Get the data of the last played songs
+ * @param channel channel name
  */
 .getChannel(channel).getHistory();
 
 
 /**
- * Channel stream urls
- * @param {String} channel The channel name. (one, dance or trap)
+ * Get all stream urls of atomicradio
+ * @param channel channel name
  */
 .getChannel(channel).getStreamUrls().getHighQuality();
 
