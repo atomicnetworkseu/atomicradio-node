@@ -6,7 +6,7 @@ export default class AtomicAPI {
     /**
      * Get the current total of listeners
      */
-    getAllListeners(): Promise<Number> {
+    getAllListeners(): Promise<number> {
         return new Promise((resolve, reject) => {
             axios.get(apiUrl + '/channels').then(response => {
                 resolve(response.data.listeners.all);
@@ -24,7 +24,7 @@ export default class AtomicAPI {
         /**
          * Get the status of our livestream.
          */
-        function isLive(): Promise<Boolean> {
+        function isLive(): Promise<boolean> {
             return new Promise((resolve, reject) => {
                 axios.get(apiUrl + '/channels/one').then(response => {
                     resolve(response.data.live.is_live);
@@ -37,7 +37,7 @@ export default class AtomicAPI {
         /**
          * Get the streamer of our livestream.
          */
-        function getStreamer(): Promise<String> {
+        function getStreamer(): Promise<string> {
             return new Promise((resolve, reject) => {
                 axios.get(apiUrl + '/channels/one').then(response => {
                     resolve(response.data.live.streamer);
@@ -65,7 +65,7 @@ export default class AtomicAPI {
             /**
              * Get the artist from the currently playing song
              */
-            function getArtist(): Promise<String> {
+            function getArtist(): Promise<string> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.artist);
@@ -78,7 +78,7 @@ export default class AtomicAPI {
             /**
              * Get the title from the currently playing song
              */
-            function getTitle(): Promise<String> {
+            function getTitle(): Promise<string> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.title);
@@ -87,11 +87,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the playlist from the currently playing song
              */
-            function getPlaylist(): Promise<String> {
+            function getPlaylist(): Promise<string> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.playlist);
@@ -100,11 +100,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the start timestamp in seconds from the currently playing song
              */
-            function getStartTimestamp(): Promise<Number> {
+            function getStartTimestamp(): Promise<number> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.start_at);
@@ -113,11 +113,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the end timestamp in seconds from the currently playing song
              */
-            function getEndTimestamp(): Promise<Number> {
+            function getEndTimestamp(): Promise<number> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.end_at);
@@ -126,11 +126,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the duration from the currently playing song
              */
-            function getDuration(): Promise<Number> {
+            function getDuration(): Promise<number> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.duration);
@@ -139,11 +139,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the 100x100 artwork from the currently playing song
              */
-            function get100Artwork(): Promise<String> {
+            function get100Artwork(): Promise<string> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.artworks['100']);
@@ -152,11 +152,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the 250x250 artwork from the currently playing song
              */
-            function get250Artwork(): Promise<String> {
+            function get250Artwork(): Promise<string> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.artworks['250']);
@@ -165,11 +165,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the 500x500 artwork from the currently playing song
              */
-            function get500Artwork(): Promise<String> {
+            function get500Artwork(): Promise<string> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.artworks['500']);
@@ -178,11 +178,11 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             /**
              * Get the 1000x1000 artwork from the currently playing song
              */
-            function get1000Artwork(): Promise<String> {
+            function get1000Artwork(): Promise<string> {
                 return new Promise((resolve, reject) => {
                     axios.get(apiUrl + '/channels/' + String(channel)).then(response => {
                         resolve(response.data.song.artworks['1000']);
@@ -191,7 +191,7 @@ export default class AtomicAPI {
                     });
                 });
             }
-    
+
             return { getArtist,getTitle,getPlaylist,getStartTimestamp,getEndTimestamp,getDuration,get100Artwork,get250Artwork,get500Artwork,get1000Artwork };
 
         }
@@ -208,7 +208,7 @@ export default class AtomicAPI {
                 });
             });
         }
-    
+
         /**
          * Get the data of the last played songs
          */
@@ -226,21 +226,21 @@ export default class AtomicAPI {
          * Get all stream urls of atomicradio
          */
         function getStreamUrls() {
-        
-            function getHighQuality(): String {
+
+            function getHighQuality(): string {
                 return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/highquality.mp3`;
             }
-    
-            function getMiddleQuality(): String {
+
+            function getMiddleQuality(): string {
                 return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/middlequality.mp3`;
             }
-    
-            function getLowQuality(): String {
+
+            function getLowQuality(): string {
                 return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/lowquality.mp3`;
             }
-    
+
             return { getHighQuality, getMiddleQuality, getLowQuality };
-    
+
         }
 
         return { getSong, getSchedule, getHistory, getStreamUrls };
