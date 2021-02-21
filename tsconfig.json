@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2020",
+    "removeComments": false,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": false,
+    "typeRoots": ["@types"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "build",
+    "declaration": true,
+  }
+}
