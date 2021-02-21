@@ -25,6 +25,7 @@
   "homepage": "https://github.com/atomicnetworkseu/atomicradio-node#readme",
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/node": "^14.0.11",
     "ts-node": "^9.1.1",
     "tsc": "^1.20150623.0",
     "tslint": "^6.1.3",
