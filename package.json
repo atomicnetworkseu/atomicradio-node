@@ -1,7 +1,7 @@
 {
   "name": "atomicradio",
   "version": "1.0.3",
-  "description": "A node.js library for AtomicRadio Web-Api.",
+  "description": "A node.js library for atomicradio web-api.",
   "main": "./build/index.js",
   "repository": {
     "type": "git",
@@ -11,8 +11,8 @@
     "build": "tsc --skipLibCheck && tsc --emitDeclarationOnly",
     "lint": "tslint -p tsconfig.json --fix"
   },
-  "keywords": [],
-  "author": "Kacper Mura <kacper.m@atomicnetworks.eu>",
+  "keywords": ["atomicradio", "typescript", "javascript", "api", "webradio"],
+  "author": "Kacper Mura <kacper.mura@atomicnetworks.eu>",
   "bugs": {
     "url": "https://github.com/atomicnetworkseu/atomicradio-node/issues"
   },
