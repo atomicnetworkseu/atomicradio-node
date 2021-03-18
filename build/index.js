@@ -208,13 +208,13 @@ class AtomicAPI {
          */
         function getStreamUrls() {
             function getHighQuality() {
-                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/highquality.mp3`;
+                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/highquality`;
             }
             function getMiddleQuality() {
-                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/middlequality.mp3`;
+                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/middlequality`;
             }
             function getLowQuality() {
-                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/lowquality.mp3`;
+                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/lowquality`;
             }
             return { getHighQuality, getMiddleQuality, getLowQuality };
         }
