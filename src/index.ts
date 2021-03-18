@@ -228,15 +228,15 @@ export default class AtomicAPI {
         function getStreamUrls() {
 
             function getHighQuality(): string {
-                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/highquality.mp3`;
+                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/highquality`;
             }
 
             function getMiddleQuality(): string {
-                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/middlequality.mp3`;
+                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/middlequality`;
             }
 
             function getLowQuality(): string {
-                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/lowquality.mp3`;
+                return `https://listen.atomicradio.eu/${String(channel).toLowerCase()}/lowquality`;
             }
 
             return { getHighQuality, getMiddleQuality, getLowQuality };
