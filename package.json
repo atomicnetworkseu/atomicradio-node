@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc --skipLibCheck && tsc --emitDeclarationOnly",
     "lint": "tslint -p tsconfig.json --fix",
-	"test": "tslint -p tsconfig.json --fix"
+	  "test": "tslint -p tsconfig.json --fix"
   },
   "keywords": [
     "atomicradio",
