@@ -1,6 +1,6 @@
 {
   "name": "atomicradio",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A node.js library for atomicradio web-api.",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc --skipLibCheck && tsc --emitDeclarationOnly",
     "lint": "tslint -p tsconfig.json --fix",
-	  "test": "tslint -p tsconfig.json --fix"
+    "test": "tslint -p tsconfig.json --fix"
   },
   "keywords": [
     "atomicradio",
